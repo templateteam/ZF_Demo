@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.qdccb.bqd"
+    },
+    "com.pay.ICBCPayPlugin": {
+      "PACKAGE_NAME": "com.qdccb.bqd"
     }
   },
   "dependent_plugins": {}

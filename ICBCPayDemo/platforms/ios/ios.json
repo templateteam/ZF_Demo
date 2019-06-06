@@ -4,16 +4,40 @@
     "uninstalled": []
   },
   "config_munge": {
-    "files": {}
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"ICBCPayPlugin\"><param name=\"ios-package\" value=\"ICBCPayPlugin\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
   },
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "com.pay.ICBCPayPlugin": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
     }
   },
   "dependent_plugins": {},
-  "modules": [],
+  "modules": [
+    {
+      "id": "com.pay.ICBCPayPlugin.ICBCPayPlugin",
+      "file": "plugins/com.pay.ICBCPayPlugin/www/ICBCPayPlugin.js",
+      "pluginId": "com.pay.ICBCPayPlugin",
+      "clobbers": [
+        "ICBCPayPlugin"
+      ]
+    }
+  ],
   "plugin_metadata": {
-    "cordova-plugin-whitelist": "1.3.3"
+    "cordova-plugin-whitelist": "1.3.3",
+    "com.pay.ICBCPayPlugin": "0.0.1"
   }
 }

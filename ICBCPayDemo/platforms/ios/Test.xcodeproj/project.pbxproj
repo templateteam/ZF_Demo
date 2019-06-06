@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
@@ -12,27 +13,47 @@
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		47BA4CE16F574D8297EC752D /* ICBCPaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8D1D898C9DF4CC1B3A5A356 /* ICBCPaySDK.framework */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
+		9813DE832FCD4A6F98A18D1F /* ICBCPayPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF57658DD4C416EAABC50FE /* ICBCPayPlugin.m */; };
+		BF3E9F7D52E348F09B5C3BED /* ICBCPaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 97E402878AF44B27BE4717EF /* ICBCPaySDK.bundle */; };
+		C7F6B59422A8E3260060B364 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F6B56E22A8E3260060B364 /* UIView+Toast.m */; };
+		C7F6B59522A8E3260060B364 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F6B57222A8E3260060B364 /* Base64.m */; };
+		C7F6B59622A8E3260060B364 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F6B57422A8E3260060B364 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C7F6B59722A8E3260060B364 /* NSDictionaryXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F6B57822A8E3260060B364 /* NSDictionaryXMLParser.m */; };
+		C7F6B59822A8E3260060B364 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F6B57922A8E3260060B364 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C7F6B59922A8E3260060B364 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F6B57C22A8E3260060B364 /* XMLDictionary.m */; };
+		C7F6B59A22A8E3260060B364 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F6B58722A8E3260060B364 /* AFURLResponseSerialization.m */; };
+		C7F6B59B22A8E3260060B364 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F6B58822A8E3260060B364 /* AFHTTPSessionManager.m */; };
+		C7F6B59C22A8E3260060B364 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F6B58922A8E3260060B364 /* AFURLConnectionOperation.m */; };
+		C7F6B59D22A8E3260060B364 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F6B58B22A8E3260060B364 /* AFURLSessionManager.m */; };
+		C7F6B59E22A8E3260060B364 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F6B58C22A8E3260060B364 /* AFHTTPRequestOperationManager.m */; };
+		C7F6B59F22A8E3260060B364 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F6B58D22A8E3260060B364 /* AFURLRequestSerialization.m */; };
+		C7F6B5A022A8E3260060B364 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F6B58E22A8E3260060B364 /* AFHTTPRequestOperation.m */; };
+		C7F6B5A122A8E3260060B364 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F6B59022A8E3260060B364 /* AFNetworkReachabilityManager.m */; };
+		C7F6B5A222A8E3260060B364 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F6B59122A8E3260060B364 /* AFSecurityPolicy.m */; };
+		C7F6B5A322A8E3260060B364 /* NSURLRequest+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F6B59322A8E3260060B364 /* NSURLRequest+Additions.m */; };
+		EFD9A5941CF3407988A7B9D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169EC46B12E24222863A10A8 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = CordovaLib;
 		};
 		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = CordovaLib;
 		};
 		907D8123214C687600058A10 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C0C01EB21E3911D50056E6CB;
 			remoteInfo = Cordova;
@@ -40,12 +61,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Test/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Test/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		169EC46B12E24222863A10A8 /* UIKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF57658DD4C416EAABC50FE /* ICBCPayPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ICBCPayPlugin.m; path = com.pay.ICBCPayPlugin/ICBCPayPlugin.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -54,12 +77,50 @@
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
 		32CA4F630368D1EE00C91783 /* Test-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Test-Prefix.pch"; sourceTree = "<group>"; };
-		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = "Test/CDVLaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		69961BE0F8224E7FB78A9C1F /* ICBCPayPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = ICBCPayPlugin.h; path = com.pay.ICBCPayPlugin/ICBCPayPlugin.h; sourceTree = "<group>"; };
+		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = Test/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* Test-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Test-Info.plist"; path = "Test/Test-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		97E402878AF44B27BE4717EF /* ICBCPaySDK.bundle */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.plug-in"; path = ICBCPaySDK.bundle; sourceTree = "<group>"; };
+		C7F6B56D22A8E3260060B364 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		C7F6B56E22A8E3260060B364 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		C7F6B57022A8E3260060B364 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		C7F6B57122A8E3260060B364 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		C7F6B57222A8E3260060B364 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		C7F6B57322A8E3260060B364 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		C7F6B57422A8E3260060B364 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		C7F6B57522A8E3260060B364 /* NSURLRequest+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+Additions.h"; sourceTree = "<group>"; };
+		C7F6B57722A8E3260060B364 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		C7F6B57822A8E3260060B364 /* NSDictionaryXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryXMLParser.m; sourceTree = "<group>"; };
+		C7F6B57922A8E3260060B364 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		C7F6B57B22A8E3260060B364 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		C7F6B57C22A8E3260060B364 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		C7F6B57D22A8E3260060B364 /* GDataDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataDefines.h; sourceTree = "<group>"; };
+		C7F6B57E22A8E3260060B364 /* NSDictionaryXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionaryXMLParser.h; sourceTree = "<group>"; };
+		C7F6B58022A8E3260060B364 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		C7F6B58122A8E3260060B364 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		C7F6B58222A8E3260060B364 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		C7F6B58322A8E3260060B364 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		C7F6B58422A8E3260060B364 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		C7F6B58522A8E3260060B364 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		C7F6B58622A8E3260060B364 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		C7F6B58722A8E3260060B364 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		C7F6B58822A8E3260060B364 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		C7F6B58922A8E3260060B364 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		C7F6B58A22A8E3260060B364 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		C7F6B58B22A8E3260060B364 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		C7F6B58C22A8E3260060B364 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		C7F6B58D22A8E3260060B364 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		C7F6B58E22A8E3260060B364 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		C7F6B58F22A8E3260060B364 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		C7F6B59022A8E3260060B364 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		C7F6B59122A8E3260060B364 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		C7F6B59222A8E3260060B364 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		C7F6B59322A8E3260060B364 /* NSURLRequest+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+Additions.m"; sourceTree = "<group>"; };
+		C8D1D898C9DF4CC1B3A5A356 /* ICBCPaySDK.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = ICBCPaySDK.framework; path = Test/Plugins/com.pay.ICBCPayPlugin/ICBCPaySDK.framework; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
-		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Test/config.xml"; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = Test/config.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				47BA4CE16F574D8297EC752D /* ICBCPaySDK.framework in Frameworks */,
+				EFD9A5941CF3407988A7B9D5 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +140,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C7F6B56B22A8E3260060B364 /* ICBCPayUtil */,
 				302D95EE14D2391D003F00A1 /* MainViewController.h */,
 				302D95EF14D2391D003F00A1 /* MainViewController.m */,
 				302D95F014D2391D003F00A1 /* MainViewController.xib */,
@@ -84,7 +148,7 @@
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
 			);
 			name = Classes;
-			path = "Test/Classes";
+			path = Test/Classes;
 			sourceTree = SOURCE_ROOT;
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -101,7 +165,7 @@
 				EB87FDF41871DAF40020F90C /* config.xml */,
 				EB87FDF31871DA8E0020F90C /* www */,
 				EB87FDF11871DA420020F90C /* Staging */,
-				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
+				301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				307C750510C5A3420062BCA9 /* Plugins */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -120,7 +184,7 @@
 				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
 			);
 			name = "Other Sources";
-			path = "Test";
+			path = Test;
 			sourceTree = "<group>";
 		};
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
@@ -130,14 +194,17 @@
 				3047A50E1AB8057F00498E2A /* config */,
 				8D1107310486CEB800E47090 /* Test-Info.plist */,
 				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+				97E402878AF44B27BE4717EF /* ICBCPaySDK.bundle */,
 			);
 			name = Resources;
-			path = "Test/Resources";
+			path = Test/Resources;
 			sourceTree = "<group>";
 		};
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C8D1D898C9DF4CC1B3A5A356 /* ICBCPaySDK.framework */,
+				169EC46B12E24222863A10A8 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -164,10 +231,94 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				1DF57658DD4C416EAABC50FE /* ICBCPayPlugin.m */,
+				69961BE0F8224E7FB78A9C1F /* ICBCPayPlugin.h */,
 			);
 			name = Plugins;
-			path = "Test/Plugins";
+			path = Test/Plugins;
 			sourceTree = SOURCE_ROOT;
+		};
+		C7F6B56B22A8E3260060B364 /* ICBCPayUtil */ = {
+			isa = PBXGroup;
+			children = (
+				C7F6B56C22A8E3260060B364 /* toast */,
+				C7F6B56F22A8E3260060B364 /* base64 */,
+				C7F6B57522A8E3260060B364 /* NSURLRequest+Additions.h */,
+				C7F6B57622A8E3260060B364 /* xml */,
+				C7F6B57F22A8E3260060B364 /* AFNetworking */,
+				C7F6B59322A8E3260060B364 /* NSURLRequest+Additions.m */,
+			);
+			path = ICBCPayUtil;
+			sourceTree = "<group>";
+		};
+		C7F6B56C22A8E3260060B364 /* toast */ = {
+			isa = PBXGroup;
+			children = (
+				C7F6B56D22A8E3260060B364 /* UIView+Toast.h */,
+				C7F6B56E22A8E3260060B364 /* UIView+Toast.m */,
+			);
+			path = toast;
+			sourceTree = "<group>";
+		};
+		C7F6B56F22A8E3260060B364 /* base64 */ = {
+			isa = PBXGroup;
+			children = (
+				C7F6B57022A8E3260060B364 /* Base64.h */,
+				C7F6B57122A8E3260060B364 /* GTMBase64.h */,
+				C7F6B57222A8E3260060B364 /* Base64.m */,
+				C7F6B57322A8E3260060B364 /* GTMDefines.h */,
+				C7F6B57422A8E3260060B364 /* GTMBase64.m */,
+			);
+			path = base64;
+			sourceTree = "<group>";
+		};
+		C7F6B57622A8E3260060B364 /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				C7F6B57722A8E3260060B364 /* GDataXMLNode.h */,
+				C7F6B57822A8E3260060B364 /* NSDictionaryXMLParser.m */,
+				C7F6B57922A8E3260060B364 /* GDataXMLNode.m */,
+				C7F6B57A22A8E3260060B364 /* XMLDictionary */,
+				C7F6B57D22A8E3260060B364 /* GDataDefines.h */,
+				C7F6B57E22A8E3260060B364 /* NSDictionaryXMLParser.h */,
+			);
+			path = xml;
+			sourceTree = "<group>";
+		};
+		C7F6B57A22A8E3260060B364 /* XMLDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				C7F6B57B22A8E3260060B364 /* XMLDictionary.h */,
+				C7F6B57C22A8E3260060B364 /* XMLDictionary.m */,
+			);
+			path = XMLDictionary;
+			sourceTree = "<group>";
+		};
+		C7F6B57F22A8E3260060B364 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				C7F6B58022A8E3260060B364 /* AFSecurityPolicy.h */,
+				C7F6B58122A8E3260060B364 /* AFNetworkReachabilityManager.h */,
+				C7F6B58222A8E3260060B364 /* AFHTTPRequestOperation.h */,
+				C7F6B58322A8E3260060B364 /* AFHTTPRequestOperationManager.h */,
+				C7F6B58422A8E3260060B364 /* AFURLSessionManager.h */,
+				C7F6B58522A8E3260060B364 /* AFURLRequestSerialization.h */,
+				C7F6B58622A8E3260060B364 /* AFURLConnectionOperation.h */,
+				C7F6B58722A8E3260060B364 /* AFURLResponseSerialization.m */,
+				C7F6B58822A8E3260060B364 /* AFHTTPSessionManager.m */,
+				C7F6B58922A8E3260060B364 /* AFURLConnectionOperation.m */,
+				C7F6B58A22A8E3260060B364 /* AFURLResponseSerialization.h */,
+				C7F6B58B22A8E3260060B364 /* AFURLSessionManager.m */,
+				C7F6B58C22A8E3260060B364 /* AFHTTPRequestOperationManager.m */,
+				C7F6B58D22A8E3260060B364 /* AFURLRequestSerialization.m */,
+				C7F6B58E22A8E3260060B364 /* AFHTTPRequestOperation.m */,
+				C7F6B58F22A8E3260060B364 /* AFNetworking.h */,
+				C7F6B59022A8E3260060B364 /* AFNetworkReachabilityManager.m */,
+				C7F6B59122A8E3260060B364 /* AFSecurityPolicy.m */,
+				C7F6B59222A8E3260060B364 /* AFHTTPSessionManager.h */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
 		};
 		EB87FDF11871DA420020F90C /* Staging */ = {
 			isa = PBXGroup;
@@ -195,8 +346,8 @@
 			dependencies = (
 				301BF551109A68C00062928A /* PBXTargetDependency */,
 			);
-			name = "Test";
-			productName = "Test";
+			name = Test;
+			productName = Test;
 			productReference = 1D6058910D05DD3D006BFB54 /* Test.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -209,6 +360,7 @@
 				LastUpgradeCheck = 510;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = HEDB6AY29R;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -217,12 +369,16 @@
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectReferences = (
 				{
 					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
-					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -257,6 +413,7 @@
 				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
 				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+				BF3E9F7D52E348F09B5C3BED /* ICBCPaySDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,9 +442,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F6B59C22A8E3260060B364 /* AFURLConnectionOperation.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				C7F6B5A322A8E3260060B364 /* NSURLRequest+Additions.m in Sources */,
+				C7F6B59E22A8E3260060B364 /* AFHTTPRequestOperationManager.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				C7F6B59D22A8E3260060B364 /* AFURLSessionManager.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				C7F6B59B22A8E3260060B364 /* AFHTTPSessionManager.m in Sources */,
+				C7F6B59F22A8E3260060B364 /* AFURLRequestSerialization.m in Sources */,
+				C7F6B5A222A8E3260060B364 /* AFSecurityPolicy.m in Sources */,
+				C7F6B59422A8E3260060B364 /* UIView+Toast.m in Sources */,
+				C7F6B59A22A8E3260060B364 /* AFURLResponseSerialization.m in Sources */,
+				C7F6B5A122A8E3260060B364 /* AFNetworkReachabilityManager.m in Sources */,
+				C7F6B59522A8E3260060B364 /* Base64.m in Sources */,
+				C7F6B59922A8E3260060B364 /* XMLDictionary.m in Sources */,
+				C7F6B59822A8E3260060B364 /* GDataXMLNode.m in Sources */,
+				9813DE832FCD4A6F98A18D1F /* ICBCPayPlugin.m in Sources */,
+				C7F6B59622A8E3260060B364 /* GTMBase64.m in Sources */,
+				C7F6B5A022A8E3260060B364 /* AFHTTPRequestOperation.m in Sources */,
+				C7F6B59722A8E3260060B364 /* NSDictionaryXMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,16 +486,32 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = HEDB6AY29R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Test/Plugins/com.pay.ICBCPayPlugin\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Test/Test-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "Test/Test-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qdccb.bqd;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qdccb.bqd12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -337,14 +527,30 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = HEDB6AY29R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Test/Plugins/com.pay.ICBCPayPlugin\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Test/Test-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "Test/Test-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qdccb.bqd;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qdccb.bqd12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -386,9 +592,9 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qdccb.bqd;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.qdccb.bqd;
 			};
 			name = Debug;
 		};
@@ -426,9 +632,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qdccb.bqd;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.qdccb.bqd;
 			};
 			name = Release;
 		};

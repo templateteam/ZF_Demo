@@ -27,13 +27,29 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
-
+#import  <ICBCPaySDK/ICBCPaySDK.h>
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
     self.viewController = [[MainViewController alloc] init];
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
+}
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation {
+    
+    //    if ([url.host isEqualToString:@"safepay"]) {
+    [[ICBCPaySDK sharedSdk] ICBCResultBackWithUrl:url];
+    //    }
+    
+    return YES;
+}
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options{
+    
+    if ([[url absoluteString] hasSuffix:@"ICBCB2CPAY"]) {
+        [[ICBCPaySDK sharedSdk] ICBCResultBackWithUrl:url];
+    }
+    
+    return YES;
 }
 
 @end
