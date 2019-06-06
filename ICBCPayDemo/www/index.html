@@ -7,7 +7,12 @@
             <script type="text/javascript" charset="utf-8">
                 
                 function testPlugin() {
-                    ICBCPayPlugin.callJHBank("isJHPayAvailable", success, error )
+                    var order = {
+                        orign:"<?xml version=\"1.0\" encoding=\"GBK\" standalone=\"no\"?><B2CReq><interfaceName>ICBC_WAPB_B2C</interfaceName><interfaceVersion>1.0.0.6</interfaceVersion><orderInfo><orderDate>20130410121036</orderDate><orderid>201304101210360</orderid><amount>500</amount><installmentTimes>1</installmentTimes><curType>001</curType><merID>0200EC23335149</merID><merAcct>0200024109031548569</merAcct></orderInfo><custom><verifyJoinFlag>0</verifyJoinFlag><Language>zh_CN</Language></custom><message><goodsID>001</goodsID><goodsName>充值卡</goodsName><goodsNum>2</goodsNum><carriageAmt>1000</carriageAmt><merHint>该商品不换不退</merHint><remark1></remark1><remark2></remark2><merURL>http://82.200.46.130/emulator/Wap_shop_result.jsp</merURL><merVAR></merVAR><notifyType>HS</notifyType><resultType>1</resultType><backup1></backup1><backup2></backup2><backup3></backup3><backup4></backup4></message></B2CReq>",
+                        cer:"1233",
+                    };
+                    ICBCPayPlugin.callJHBank(order,success, error);
+                    
                 }
             function success(msg) {
                 alert(msg);
