@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>TestPlugin</title>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-    <script type="text/javascript" charset="utf-8">
-
+    <head>
+        <title>TestPlugin</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+            <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+            <script type="text/javascript" charset="utf-8">
+                
                 function testPlugin() {
                     var order = {
                         env:"0",
@@ -17,39 +17,39 @@
                         merCert:"MIIChjCCAe+gAwIBAgIKbaHKEE0tAAAH3zANBgkqhkiG9w0BAQUFADA2MRkwFwYDVQQDExBjb3JiYW5rNDMgc2RjIENOMRkwFwYDVQQKExBjb3JiYW5rNDMuY29tLmNuMB4XDTE1MTEzMDAyMzczMloXDTE2MTEzMDAyMzczMlowPzETMBEGA1UEAxMKQjJDLmUuMDIwMDENMAsGA1UECxMEMDIwMDEZMBcGA1UEChMQY29yYmFuazQzLmNvbS5jbjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwV4bOl8ByDx1So1smhCWvzCegIVze5T6qreQyUiBYI6B5hnkd6ke3ToxFUDRawdN8JWAGW+0Ze02irfg4cnZs3f8PHZ5IEiLYOGrHUWfEsk3QhKrSCLyyzIACeceNMVlIcjzYtemziNej5NZsv787WQSpY5gy+2vNUDt+f/Hj6ECAwEAAaOBkTCBjjAfBgNVHSMEGDAWgBS+7/FOAOQ4De97QGDOvMygCG34YzBMBgNVHR8ERTBDMEGgP6A9pDswOTENMAsGA1UEAxMEY3JsMzENMAsGA1UECxMEY2NybDEZMBcGA1UEChMQY29yYmFuazQzLmNvbS5jbjAdBgNVHQ4EFgQUfTKD6Q/uHEN8zthhoVr3/KCJiQcwDQYJKoZIhvcNAQEFBQADgYEALHBcTTjXI5fgd/b60y8ObhxMGWiDDpb2f9gMoKYmkGhFCf2+KGSBpPuYc9u3J8P0CUQ9znyYpxSGXKzVHh34PYxvGLpCQZ/liSKsfgD/JXvNqwgBmMXq0MzoMrYc6JMaMvSmfy/jVq9D6YFM5AnzsKLG+FQPckNx6O7pRqNzL1E="
                     };
                     ICBCPayPlugin.callJHBank(order,success, error);
-
+                    
                 }
             function success(msg) {
-                alert("success");
+                alert("success"+msg);
             }
-
+            
             function error(msg) {
-                alert("fail");
+                alert("fail"+msg);
             }
-
+            
             function testPlugin2() {
                 ICBCPayPlugin.callJHBank("isJHPayAvailable", success, error )
             }
-
+            
             function testPlugin3() {
-                console.log(111);
-                ICBCPayPlugin.callJHBank("isABCePayAvailable", success, error )
+                
+                ICBCPayPlugin.callBankABC("isABCePayAvailable", success, error )
             }
-
+            
             function testPlugin4() {
-
+                
                 ICBCPayPlugin.callBankABC("isJHPayAvailable", success, error )
             }
-
-
-
+            
+            
+            
                 </script>
-</head>
-
-<body style="padding-top:50px">
-<H1>ios</H1>
-<button style="font-size:17px;" onclick="testPlugin();">调用建行插件支付</button> <br>
-<H1>android</H1>
-<button style="font-size:17px;" onclick="testPlugin3();">调用建行插件支付</button> <br>
-</body>
+            </head>
+    
+    <body style="padding-top:50px">
+        <H1>ios</H1>
+        <button style="font-size:17px;" onclick="testPlugin();">调用建行插件支付</button> <br>
+        <H1>android</H1>
+        <button style="font-size:17px;" onclick="testPlugin3();">调用建行插件支付</button> <br>
+    </body>
 </html>
