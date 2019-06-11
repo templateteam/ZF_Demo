@@ -32,6 +32,7 @@ public class ICBCPayPlugin extends CordovaPlugin {
 
     private void callJHBank(String message, CallbackContext callbackContext) {
         if (message != null && message.length() > 0) {
+            Constants.PAY_LIST_IP = "https://b2c4.dccnet.com.cn";
             PayReq req = JSON.parseObject(message,PayReq.class);
             ICBCAPI.getInstance().sendReq(cordova.getActivity(),req);
             callbackContext.success(message);
