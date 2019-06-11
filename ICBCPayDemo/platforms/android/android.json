@@ -15,6 +15,10 @@
             {
               "xml": "<feature name=\"ICBCPayPlugin\"><param name=\"android-package\" value=\"com.pay.ICBCPayPlugin.ICBCPayPlugin\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"ICBCPayPlugin\"><param name=\"android-package\" value=\"com.pay.ICBCPayPlugin\" /></feature>",
+              "count": 1
             }
           ]
         }

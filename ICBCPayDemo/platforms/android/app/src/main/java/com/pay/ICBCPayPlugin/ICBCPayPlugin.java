@@ -1,5 +1,12 @@
 package com.pay.ICBCPayPlugin;
 
+import android.widget.Toast;
+
+import com.alibaba.fastjson.JSON;
+import com.icbc.paysdk.ICBCAPI;
+import com.icbc.paysdk.constants.Constants;
+import com.icbc.paysdk.model.PayReq;
+
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
 
@@ -14,16 +21,19 @@ public class ICBCPayPlugin extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-        if (action.equals("coolMethod")) {
+//        Toast.makeText(cordova.getActivity(), "AA"+action, Toast.LENGTH_SHORT).show();
+        if (action.equals("callJHBank")) {
             String message = args.getString(0);
-            this.coolMethod(message, callbackContext);
+            this.callJHBank(message, callbackContext);
             return true;
         }
         return false;
     }
 
-    private void coolMethod(String message, CallbackContext callbackContext) {
+    private void callJHBank(String message, CallbackContext callbackContext) {
         if (message != null && message.length() > 0) {
+            PayReq req = JSON.parseObject(message,PayReq.class);
+            ICBCAPI.getInstance().sendReq(cordova.getActivity(),req);
             callbackContext.success(message);
         } else {
             callbackContext.error("Expected one non-empty string argument.");
