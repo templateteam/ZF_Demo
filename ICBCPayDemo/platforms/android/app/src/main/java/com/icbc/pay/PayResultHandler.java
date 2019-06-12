@@ -59,6 +59,8 @@ public class PayResultHandler extends Activity implements IPayEventHandler {
         String tranMsg = resp.getTranMsg();
         String orderNo = resp.getOrderNo();
         result_text.setText("交易码：" + tranCode + "\n交易信息：" + tranMsg + "\n订单号："+ orderNo);
+        this.finish();
+
     }
 
 }
