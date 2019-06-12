@@ -24,20 +24,19 @@ public class ICBCPayPlugin extends CordovaPlugin {
 //        Toast.makeText(cordova.getActivity(), "AA"+action, Toast.LENGTH_SHORT).show();
         if (action.equals("callJHBank")) {
             String message = args.getString(0);
-            this.callJHBank(message, callbackContext);
+            if (message != null && message.length() > 0) {
+                Constants.PAY_LIST_IP = "https://b2c4.dccnet.com.cn";
+                PayReq req = JSON.parseObject(message,PayReq.class);
+                ICBCAPI.getInstance().sendReq(cordova.getActivity(),req);
+            } else {
+                callbackContext.error("Expected one non-empty string argument.");
+            }
             return true;
         }
         return false;
     }
 
     private void callJHBank(String message, CallbackContext callbackContext) {
-        if (message != null && message.length() > 0) {
-            Constants.PAY_LIST_IP = "https://b2c4.dccnet.com.cn";
-            PayReq req = JSON.parseObject(message,PayReq.class);
-            ICBCAPI.getInstance().sendReq(cordova.getActivity(),req);
-            callbackContext.success(message);
-        } else {
-            callbackContext.error("Expected one non-empty string argument.");
-        }
+
     }
 }

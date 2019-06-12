@@ -11,6 +11,7 @@ import com.icbc.paysdk.IPayEventHandler;
 import com.icbc.paysdk.constants.Constants;
 import com.icbc.paysdk.model.PayResp;
 import com.icbc.paysdk.model.ReqErr;
+import com.pay.ICBCPayPlugin.ICBCPayPlugin;
 
 /**
  * Created by zxp on 2019/6/11.
@@ -25,8 +26,8 @@ public class PayResultHandler extends Activity implements IPayEventHandler {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 
-//		setContentView(R.layout.pay_result_handler_layout);
-//		result_text = (TextView) findViewById(R.id.pay_result);
+//      setContentView(R.layout.pay_result_handler_layout);
+//      result_text = (TextView) findViewById(R.id.pay_result);
 
 		ICBCAPI.getInstance().handleIntent(getIntent(), this);
 
@@ -60,9 +61,7 @@ public class PayResultHandler extends Activity implements IPayEventHandler {
 		String tranCode = resp.getTranCode();
 		String tranMsg = resp.getTranMsg();
 		String orderNo = resp.getOrderNo();
-
 		result_text.setText("交易码：" + tranCode + "\n交易信息：" + tranMsg + "\n订单号："+ orderNo);
-
 	}
 
 
