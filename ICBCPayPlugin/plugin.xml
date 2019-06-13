@@ -19,11 +19,12 @@
   <platform name="android">
     <config-file parent="/*" target="res/xml/config.xml">
       <feature name="ICBCPayPlugin">
-        <param name="android-package" value="com.pay.ICBCPayPlugin"/>
+        <param name="android-package" value="com.pay.ICBCPayPlugin.ICBCPayPlugin"/>
       </feature>
     </config-file>
     <config-file parent="/*" target="AndroidManifest.xml"/>
     <source-file src="src/android/ICBCPayPlugin.java" target-dir="src/com/pay/ICBCPayPlugin"/>
+    <source-file src="src/android/PayResultHandler.java" target-dir="src/com/icbc/pay"/>
     <source-file src="src/android/ICBCPaySDK-V3.0-proguard.jar" target-dir="libs" />
   </platform>
 </plugin>
