@@ -46,8 +46,11 @@ public class PayResultHandler extends Activity implements IPayEventHandler {
         // TODO Auto-generated method stub
         Log.i(Constants.LogFlag, "onErr() ...... ");
 
-        result_text.setText("支付错误："+ err.getErrorType());
-
+//        result_text.setText("支付错误："+ err.getErrorType());
+        Intent intent = new Intent("ICBC_TRANSACTION_RESULT");
+        intent.putExtra("success",false);
+        intent.putExtra("err",err.getErrorType());
+        sendBroadcast(intent);
     }
 
 
@@ -58,8 +61,22 @@ public class PayResultHandler extends Activity implements IPayEventHandler {
         String tranCode = resp.getTranCode();
         String tranMsg = resp.getTranMsg();
         String orderNo = resp.getOrderNo();
-        result_text.setText("交易码：" + tranCode + "\n交易信息：" + tranMsg + "\n订单号："+ orderNo);
-        this.finish();
+//        result_text.setText("交易码：" + tranCode + "\n交易信息：" + tranMsg + "\n订单号："+ orderNo);
+
+        Intent intent = new Intent("ICBC_TRANSACTION_RESULT");
+        intent.putExtra("success",true);
+        intent.putExtra("tranCode",tranCode);
+        intent.putExtra("tranMsg",tranMsg);
+        intent.putExtra("orderNo",orderNo);
+        sendBroadcast(intent);
+
+
+//        Intent intent = new Intent("ICBC_TRANSACTION_RESULT");
+//        intent.putExtra("success",false);
+//        intent.putExtra("err","errormessageby jalon ");
+//        sendBroadcast(intent);
+
+        finish();
 
     }
 
