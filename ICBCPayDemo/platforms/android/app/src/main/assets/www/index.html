@@ -26,20 +26,7 @@
             function error(msg) {
                 alert("fail"+msg);
             }
-            
-            function testPlugin2() {
-                ICBCPayPlugin.callJHBank("isJHPayAvailable", success, error )
-            }
-            
-            function testPlugin3() {
-                
-                ICBCPayPlugin.callBankABC("isABCePayAvailable", success, error )
-            }
-            
-            function testPlugin4() {
-                
-                ICBCPayPlugin.callBankABC("isJHPayAvailable", success, error )
-            }
+
             
             
             
@@ -48,8 +35,8 @@
     
     <body style="padding-top:50px">
         <H1>ios</H1>
-        <button style="font-size:17px;" onclick="testPlugin();">调用建行插件支付</button> <br>
+        <button style="font-size:17px;" onclick="testPlugin();">调用工行插件支付</button> <br>
         <H1>android</H1>
-        <button style="font-size:17px;" onclick="testPlugin3();">调用建行插件支付</button> <br>
+        <button style="font-size:17px;" onclick="testPlugin();">调用工行插件支付</button> <br>
     </body>
 </html>
